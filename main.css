@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
 
+
+
 body {
   margin: 0;
 
@@ -9,7 +11,7 @@ body {
 
 
 
-.one {
+.header {
   height: 100%;
   width: 100%;
   /* background: url('agile-1.jpg') no-repeat;
@@ -17,17 +19,35 @@ body {
 
 }
 
-.one-inner {
+.header-inner {
   background-color: aqua;
 }
 
-.one h1 {
+.header h1 {
   font-size: 120px;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: -5px;
   /* font-weight: 600; */
 
 }
+
+.fixed-image {
+  background: url('code.jpg') no-repeat center center fixed;
+  height: 30%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+/* 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
 
 .two {
   height: 100%;
