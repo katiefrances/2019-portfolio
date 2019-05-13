@@ -1,5 +1,7 @@
 /* Styling custom elements inside of the Bootstrap grid system */
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
+
 body {
   margin: 0;
 
@@ -9,5 +11,25 @@ body {
 
 .one {
   height: 100%;
+  width: 100%;
+  /* background: url('agile-1.jpg') no-repeat;
+  background-size: cover; */
+
 }
 
+.one-inner {
+  background-color: aqua;
+}
+
+.one h1 {
+  font-size: 120px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: -5px;
+  /* font-weight: 600; */
+
+}
+
+.two {
+  height: 100%;
+  background-color: bisque;
+}
