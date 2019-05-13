@@ -8,10 +8,6 @@ body {
 
 
 .one {
-  background: red;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
