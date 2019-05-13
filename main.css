@@ -1,0 +1,17 @@
+/* Styling custom elements inside of the Bootstrap grid system */
+
+body {
+  margin: 0;
+
+}
+
+
+
+.one {
+  background: red;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
