@@ -9,8 +9,6 @@ body {
 
 }
 
-
-
 .header {
   height: 100%;
   width: 100%;
@@ -21,6 +19,8 @@ body {
 
 .header-inner {
   background-color: aqua;
+  padding-top: 1.5%;
+
 }
 
 .header h1 {
@@ -29,6 +29,12 @@ body {
   letter-spacing: -5px;
   /* font-weight: 600; */
 
+}
+
+.subtitle p {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 120%;
 }
 
 .fixed-image {
