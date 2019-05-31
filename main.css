@@ -27,10 +27,14 @@ h1 {
   }
 }
 
+/* Only for H1 */
 .header-inner {
   background-color: aqua;
   padding-top: 1.5%;
   text-align: center;
+  /* -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+  border-bottom-right-radius: 20px #ccc;
 }
 
 /* @media (min-width: 320px) and (max-width: 376px) {
@@ -105,9 +109,9 @@ h1 {
 }
 
 .katie-img {
-  background: url("katie-img.jpg") no-repeat center center;
+  background: url("katie-img.jpg") no-repeat;
+  height: 100vh;
   height: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
