@@ -10,6 +10,12 @@ h1 {
   font-size: 300%;
 }
 
+/* Navigation */
+
+.navigation {
+  background: #222;
+}
+
 /* Header */
 
 .header {
