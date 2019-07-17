@@ -21,20 +21,22 @@ h1 {
   background-size: cover;
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+/* @media (min-width: 320px) and (max-width: 576px) {
   .header {
     margin-top: 50%;
   }
-}
+} */
 
 /* Only for H1 */
 .header-inner {
   background-color: aqua;
   padding-top: 1.5%;
   text-align: center;
-  /* -moz-box-shadow: 3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
-  border-bottom-right-radius: 20px #ccc;
+  /* border-bottom: 20px solid red; */
+}
+
+.title-h1 {
+  font-size: 20%;
 }
 
 /* @media (min-width: 320px) and (max-width: 376px) {
