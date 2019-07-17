@@ -139,7 +139,14 @@ h1 {
   background-size: cover; */
 }
 
-.two {
+.two,
+#two {
   height: 100%;
   background-color: bisque;
+}
+
+.three,
+#three {
+  height: 100%;
+  background-color: red;
 }
