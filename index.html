@@ -3,101 +3,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
+    <title>katie frances | portfolio</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="animate.css" />
-
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav id="navbar-example2" class="navbar fixed-top navigation">
+    <!-- TODO
+      - FINISH HEADER BREAKPOINT STYLING
+      - ALIGN KT IMG TO CENTER ON SM BREAKPOINTS
+      - FIX NAVBAR + ADD COLLAPSE
+      - FIX OVERFLOWING IMAGES
+      - ADD SOME SWEET EFFECTS TO THE SCROLLSPY (ANIMATE.CSS)
+    -->
+
+    <!-- NAVBAR -->
+    <!-- --------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="#">KF</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#two">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#three">SKILLS</a>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+        </ul>
+
+      </div>
     </nav>
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+
+    <div data-spy="scroll" data-target="#navbar-katie" data-offset=0">
+      <!-- PAGE CONTAINER -->
+      <!-- --------------------------------------------------------------------- -->
+
       <div class="container-fluid">
-        <!-- First section -->
+        <!--HEADER -->
+        <!-- --------------------------------------------------------------------- -->
         <div
           class="row d-flex justify-content-center align-items-center header"
         >
-          <div class="col-md-4 header-inner">
+          <div class="col-md-4 col-sm-6 col-xs-6 header-inner">
             <h1 class="animated fadeIn title-h1">
               katie frances
             </h1>
           </div>
-          <!-- <div class="shadow-div">
-          <h1>oh ye</h1>
-        </div> -->
+
+        <!--IMG -->
+        <!-- --------------------------------------------------------------------- -->
+
+          <div class="col-md-4 katie-img d-flex justify-content-center">
+            <img src="katie-img-sm.jpg" class="img-thumbnail rounded-circle katie-img" />
+          </div>
+
           <div class="col-md-4 subtitle">
             <p class="animated slideInUp">
-              a sydney based developer, designer & photographer and lots of
-              other awesome things
+              a sydney based developer, designer & photographer
             </p>
           </div>
 
-          <div class="col-md-4 katie-img">
-            <!-- Third column img goes here -->
-          </div>
         </div>
-        <!--/ End of first section -->
 
-        <!-- Second Row -->
+        <!-- FIXED BG IMAGE -->
+        <!-- --------------------------------------------------------------------- -->
         <div class="row fixed-image">
           <!-- fixed image here -->
         </div>
 
-        <!-- Second section -->
+        <!-- SECOND ROW -->
         <div
           class="row d-flex justify-content-center align-items-center two"
           id="two"
         >
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-6 ">
             <p>
-              <img src="https://www.fillmurray.com/300/300" />
+              <img src="https://www.fillmurray.com/300/300" class="img-fluid" />
             </p>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <p>
-              <img src="https://www.fillmurray.com/300/300" />
+              <img src="https://www.fillmurray.com/300/300" class="img-fluid" />
             </p>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <p>
-              <img src="https://www.fillmurray.com/300/300" />
+              <img src="https://www.fillmurray.com/300/300" class="img-fluid" />
             </p>
           </div>
         </div>
+
+        <!-- 3RD ROW -->
+        <!-- --------------------------------------------------------------------- -->
 
         <div
           class="row d-flex justify-content-center align-items-center three"
           id="three"
         >
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-12 col-xs-12">
             <p>
-              <img src="https://www.fillmurray.com/300/300" />
+              <img src="https://www.fillmurray.com/300/300" class="img-fluid" />
             </p>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-12 col-xs-6">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
               eveniet vel corrupti quis cumque possimus doloribus error numquam,
@@ -106,9 +130,55 @@
             </p>
           </div>
         </div>
+
+        <div
+          class="row d-flex justify-content-center align-items-center four"
+          id="four"
+        >
+          <div class="col-md-3 col-sm-3 col-sm-12 col-xs-12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              velit nihil blanditiis! Exercitationem dolor nihil aperiam
+              commodi, unde facere perferendis a consectetur voluptatum dolores
+              nobis sit, id explicabo. Pariatur, totam.
+            </p>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-sm-12 col-xs-12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              eveniet vel corrupti quis cumque possimus doloribus error numquam,
+              provident dolor minus alias eos aut itaque eligendi expedita
+              soluta, iste illum?
+            </p>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <!-- --------------------------------------------------------------------- -->
+
+        <div
+          class="row d-flex justify-content-center align-items-center page-footer"
+        >
+          <div class="col-md-6 col-sm-12 ">
+            <p>
+              Footer
+            </p>
+          </div>
+
+          <div class="col-md-6 col-sm-12 ">
+            <p>
+              Footer 2
+            </p>
+          </div>
+        </div>
       </div>
       <!-- /container fluid-->
     </div>
+    <!-- SCROLLSPY-->
+
+    <!-- BOOTSTRAP JS -->
+    <!-- --------------------------------------------------------------------- -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -118,6 +188,11 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
   </body>

@@ -2,133 +2,217 @@
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
 
+/* GLOBALS */
+/* -------------------------------------------------------------------- */
+
 body {
-  margin: 0;
+  margin: 0 auto;
+  background: #111111;
+  margin-top: 56px;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 40%;
 }
 
-/* Navigation */
-
-.navigation {
-  background: #222;
+p {
+  margin: 0px;
 }
 
-/* Header */
+a,
+a:link,
+a:active {
+  color: aqua;
+}
+
+a:hover {
+  color: red;
+}
+
+/* .nomargin {
+  margin: 0;
+} */
+
+/* NAVIGATION */
+/* -------------------------------------------------------------------- */
+.navbar-katie {
+  background: hotpink;
+  font-size: 80%;
+}
+
+/* HEADER */
+/* -------------------------------------------------------------------- */
 
 .header {
   height: 100%;
-  /* background: url("agile-1.jpg") no-repeat center center fixed; */
-
-  /* background-attachment: fixed; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  background: #111;
 }
 
-/* @media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .header {
-    margin-top: 50%;
-  }
-} */
-
-/* Only for H1 */
-.header-inner {
-  background-color: aqua;
-  padding-top: 1.5%;
-  text-align: center;
-  /* border-bottom: 20px solid red; */
-}
-
-.title-h1 {
-  font-size: 20%;
-}
-
-/* @media (min-width: 320px) and (max-width: 376px) {
-  .header-inner {
-    background-color: i;
-    padding-top: 1.5%;
-    font-size: 100%;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 576px) {
-  .header-inner {
-    background-color: aqua;
-    padding-top: 1.5%;
-  }
-} */
-
-.header h1 {
-  font-family: "Josefin Sans", sans-serif;
-  letter-spacing: -5px;
-  font-size: 550%;
-  text-align: center;
-}
-/* 
-@media (min-width: 320px) and (max-width: 376px) {
-  .header h1 {
-    font-size: 400%;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 576px) {
-  .header h1 {
-    font-size: 400%;
+    background: salmon;
+    height: 100vh;
+    /* to offset navbar */
+    margin-top: -55px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .header h1 {
-    font-size: 230%;
+  .header {
+    background: saddlebrown;
+    height: 100vh;
+    /* padding-top: 2%; */
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .header h1 {
-    font-size: 400%;
+/* Only for H1 */
+.header-inner {
+  background-color: aqua;
+  /* padding-top: 1.5%; */
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .header-inner {
+    background-color: indigo;
+    font-size: 690%;
+    margin-top: 10%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .header h1 {
-    font-size: 325%;
+@media (min-width: 576px) and (max-width: 768px) {
+  .header-inner {
+    background-color: greenyellow;
+    margin-top: 1%;
+    font-size: 80%;
   }
 }
 
-@media (min-width: 1201px) {
+/* Title */
+.title-h1 {
+  font-size: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .title-h1 h1 {
+    font-size: 100%;
+    /* padding: -1%; */
+    background: darkcyan;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .title-h1 {
+    font-size: 7%;
+    /* padding: -1%; */
+    background: green;
+  }
+}
+
+.header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -3%;
+  /* font-size: 550%; */
+  text-align: center;
+  margin-top: 2%;
+}
+
+@media (min-width: 320px) and (min-width: 576px) {
   .header h1 {
-    font-size: 359%;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: -3%;
+    font-size: 240%;
+    text-align: center;
+    margin-top: 2%;
+  }
+}
+
+.katie-img {
+  width: 80%;
+}
+
+/* @media (max-width: 320px) {
+  .katie-img {
+    width: 60%;
+
   }
 } */
 
-/* @media (min-width: 1200px) and (max-width: 1600px){ 
-  .header h1 {
-    font-size:500%;
+@media (min-width: 320px) and (max-width: 450px) {
+  .katie-img {
+    width: 72%;
+    margin-top: -10%;
   }
- } */
+}
+
+@media (min-width: 450px) and (max-width: 576px) {
+  .katie-img {
+    width: 72%;
+    margin-top: -5%;
+  }
+}
+
+/* @media (min-width: 320px) and (max-width: 576px) {
+  .katie-img {
+    width: 78%;
+    margin-top: -10%;
+  }
+} */
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .katie-img {
+    width: 60%;
+  }
+}
+
+/* SUBTITRE */
+/* -------------------------------------------------------------------- */
 
 .subtitle p {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-size: 100%;
-  margin-top: 2%;
+  /* background: red; */
+  /* margin-top: -10%; */
 }
 
-.katie-img {
-  background: url("katie-img.jpg") no-repeat;
-  height: 100vh;
-  height: 100%;
-  background-size: cover;
-}
-
-/* @media (min-width: 320px) and (max-width: 576px) {
-  .subtitle {
-    height: 40%;
-
+@media (min-width: 320px) and (max-width: 450px) {
+  .subtitle p {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-size: 100%;
+    text-align: center;
+    background: yellow;
+    margin-top: -20%;
   }
-} */
+}
+
+@media (min-width: 450px) and (max-width: 576px) {
+  .subtitle p {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-size: 100%;
+    text-align: center;
+    background: olivedrab;
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .subtitle p {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-size: 110%;
+    background: olive;
+
+    /* margin-top: 2%; */
+  }
+}
+
+/* FIXED IMG */
+/* -------------------------------------------------------------------- */
 
 .fixed-image {
   background: url("code.jpg") no-repeat center center fixed;
@@ -136,23 +220,31 @@ h1 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* 
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
 }
 
+/* ROWS */
+/* -------------------------------------------------------------------- */
 .two,
 #two {
   height: 100%;
-  background-color: bisque;
+  background-color: green;
+  /* overflow-x: hidden; */
 }
 
 .three,
 #three {
   height: 100%;
   background-color: red;
+}
+
+.four,
+#four {
+  height: 100%;
+  background-color: green;
+}
+
+.page-footer {
+  background: red;
+  text-align: center;
+  padding: 1%;
 }
