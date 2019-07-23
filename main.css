@@ -48,6 +48,7 @@ a:hover {
   /* background-repeat: no-repeat; */
   background-size: cover;
   background: #111;
+  display: flex;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -229,23 +230,26 @@ a:hover {
 #two {
   height: 100%;
   background-color: green;
-  /* overflow-x: hidden; */
+  display: flex;
 }
 
 .three,
 #three {
   height: 100%;
   background-color: red;
+  display: flex;
 }
 
 .four,
 #four {
   height: 100%;
   background-color: green;
+  display: flex;
 }
 
 .page-footer {
   background: red;
   text-align: center;
   padding: 1%;
+  display: flex;
 }
