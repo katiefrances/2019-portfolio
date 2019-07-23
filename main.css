@@ -22,7 +22,8 @@ p {
 
 a,
 a:link,
-a:active {
+a:active,
+a:visited {
   color: aqua;
   font-family: "Josefin Sans", sans-serif;
 }
