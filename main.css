@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   background: #111111;
   margin-top: 56px;
+  font-size: 16px;
 }
 
 h1 {
@@ -23,15 +24,12 @@ a,
 a:link,
 a:active {
   color: aqua;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a:hover {
   color: red;
 }
-
-/* .nomargin {
-  margin: 0;
-} */
 
 /* NAVIGATION */
 /* -------------------------------------------------------------------- */
@@ -47,8 +45,8 @@ a:hover {
   height: 100%;
   /* background-repeat: no-repeat; */
   background-size: cover;
-  background: #111;
-  display: flex;
+  background-color: blanchedalmond;
+  margin-top: 65px;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -56,7 +54,16 @@ a:hover {
     background: salmon;
     height: 100vh;
     /* to offset navbar */
-    margin-top: -55px;
+    /* margin-top: -55px; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .header {
+    background: salmon;
+    height: 100vh;
+    /* to offset navbar */
+    /* margin-top: -55px; */
   }
 }
 
@@ -68,18 +75,19 @@ a:hover {
   }
 }
 
-/* Only for H1 */
+/* for viewports under 320px */
+
 .header-inner {
-  background-color: aqua;
+  /* background-color: aqua; */
   /* padding-top: 1.5%; */
-  text-align: center;
+  font-size: 950%;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
   .header-inner {
-    background-color: indigo;
-    font-size: 690%;
-    margin-top: 10%;
+    /* background-color: indigo; */
+    font-size: 100%;
+    /* margin-top: -20%; */
   }
 }
 
@@ -92,39 +100,21 @@ a:hover {
 }
 
 /* Title */
-/* .title-h1 {
-  font-size: 50%;
-} */
-
-@media (min-width: 320px) and (max-width: 576px) {
-  .title-h1 h1 {
-    /* font-size: 1010%; */
-    /* padding: -1%; */
-    background: darkcyan;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .title-h1 {
-    font-size: 7%;
-    /* padding: -1%; */
-    /* background: green; */
-  }
-}
 
 .header h1 {
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: -3%;
-
+  font-size: 120%;
   text-align: center;
   margin-top: 2%;
+  /* border-bottom: 10px solid #111111; */
 }
 
 @media (min-width: 320px) and (min-width: 373px) {
   .header h1 {
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: -3%;
-    /* font-size: 10%; */
+    font-size: 200%;
     text-align: center;
     margin-top: 2%;
   }
@@ -141,20 +131,14 @@ a:hover {
 }
 
 .katie-img {
-  width: 80%;
+  width: 75%;
+  margin-top: -25%;
 }
-
-/* @media (max-width: 320px) {
-  .katie-img {
-    width: 60%;
-
-  }
-} */
 
 @media (min-width: 320px) and (max-width: 450px) {
   .katie-img {
     width: 80%;
-    margin-top: -5%;
+    margin-top: -20%;
   }
 }
 
@@ -177,17 +161,18 @@ a:hover {
 .subtitle p {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
-  font-size: 100%;
+  font-size: 110%;
+  text-align: center;
+  margin-top: -25%;
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
   .subtitle p {
     font-family: "Courier New", Courier, monospace;
-    text-transform: uppercase;
     font-size: 100%;
     text-align: center;
     background: yellow;
-    margin-top: -10%;
+    margin-top: -40%;
   }
 }
 
@@ -230,7 +215,6 @@ a:hover {
 #two {
   height: 100%;
   background-color: green;
-  display: flex;
 }
 
 .three,
