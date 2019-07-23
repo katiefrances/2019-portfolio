@@ -1,13 +1,7 @@
-// headerTitle = [
-//   'developer','designer', 'photographer'
-// ]
+var offset = 55.5;
 
-// let headerLength = headerTitle.length
-
-// for (let r = 0; r < headerLength; r++) {
-//   return r
-// }
-
-// $(".nav-link").on("click", function() {
-//   $(".navbar-collapse").collapse("hide");
-// });
+$(".navbar li a").click(function(event) {
+  event.preventDefault();
+  $($(this).attr("href"))[0].scrollIntoView();
+  scrollBy(0, -offset);
+});
