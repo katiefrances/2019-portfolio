@@ -36,7 +36,14 @@ a:hover {
 /* -------------------------------------------------------------------- */
 .navbar-katie {
   background: #222222;
-  font-size: 80%;
+  color: antiquewhite;
+  /* font-size: 70%; */
+}
+
+.fa-bars {
+  color: white;
+  font-size: 130%;
+  margin-right: -2%;
 }
 
 /* HEADER */

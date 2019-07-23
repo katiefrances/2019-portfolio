@@ -1,4 +1,4 @@
-var offset = 55.5;
+var offset = 56;
 
 $(".navbar li a").click(function(event) {
   event.preventDefault();
