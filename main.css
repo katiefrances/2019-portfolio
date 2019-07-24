@@ -30,7 +30,9 @@ h1 {
   font-size: 40%;
 }
 
-/* H4 For Project bg */
+/* H4 - PROJECTS */
+/* -------------------------------------------------------------------- */
+
 h4 {
   font-family: "Josefin Sans", sans-serif;
   position: relative;
@@ -71,6 +73,7 @@ p {
   /* font-size: 70%; */
 }
 
+/* ICONS */
 .fa-bars {
   color: white;
   font-size: 130%;
@@ -115,7 +118,8 @@ p {
   }
 }
 
-/* for viewports under 320px */
+/* HEADER DIV COLS */
+/* -------------------------------------------------------------------- */
 
 .header-inner {
   /* background-color: aqua; */
@@ -123,9 +127,21 @@ p {
   font-size: 950%;
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 400px) {
   .header-inner {
-    font-size: 950%;
+    font-size: 900%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  .header-inner {
+    font-size: 900%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  .header-inner {
+    font-size: 930%;
   }
 }
 
@@ -137,7 +153,8 @@ p {
   }
 }
 
-/* Title */
+/* HEADER HEADING H1 */
+/* -------------------------------------------------------------------- */
 
 .header h1 {
   font-family: "Josefin Sans", sans-serif;
@@ -159,22 +176,37 @@ p {
   .header h1 {
     font-size: 120%;
     margin-top: 5%;
+    margin-bottom: 10%;
   }
 }
 
-@media (min-width: 373px) and (max-width: 576px) {
+@media (min-width: 373px) and (max-width: 400px) {
   .header h1 {
-    font-size: 120%;
+    font-size: 115%;
     margin-top: 5%;
+    margin-bottom: 10%;
   }
 }
 
-/* @media (min-width: 373px) and (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 410px) {
   .header h1 {
-    font-size: 100%;
-    margin-top: 10%;
+    font-size: 110%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    /* background: orange; */
   }
-} */
+}
+
+@media (min-width: 410px) and (max-width: 500px) {
+  .header h1 {
+    font-size: 118%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+/* IMAGE VIEWPORT CUSTOMISATION */
+/* -------------------------------------------------------------------- */
 
 .katie-img {
   width: 70%;
@@ -183,33 +215,33 @@ p {
 
 @media (min-width: 320px) and (max-width: 373px) {
   .katie-img {
-    width: 68%;
+    width: 65%;
     margin-top: -28%;
   }
 }
 
 @media (min-width: 373px) and (max-width: 380px) {
   .katie-img {
-    width: 68%;
+    width: 65%;
     margin-top: -28%;
   }
 }
 
-@media (min-width: 380px) and (max-width: 450px) {
+@media (min-width: 380px) and (max-width: 400px) {
   .katie-img {
-    width: 68%;
+    width: 64.5%;
     margin-top: -28%;
   }
 }
 
-/* @media (min-width: 330px) and (max-width: 450px) {
+@media (min-width: 400px) and (max-width: 430px) {
   .katie-img {
-    width: 70%;
+    width: 65%;
     margin-top: -28%;
   }
-} */
+}
 
-@media (min-width: 450px) and (max-width: 576px) {
+@media (min-width: 430px) and (max-width: 576px) {
   .katie-img {
     width: 70%;
     margin-top: -5%;
@@ -222,7 +254,7 @@ p {
   }
 }
 
-/* SUBTITRE */
+/* SUBTITLE */
 /* -------------------------------------------------------------------- */
 
 .subtitle p {
@@ -235,7 +267,7 @@ p {
 @media (min-width: 320px) and (max-width: 450px) {
   .subtitle p {
     font-size: 100%;
-    /* background: yellow; */
+
     margin-top: -25%;
   }
 }
@@ -252,12 +284,10 @@ p {
   .subtitle p {
     font-size: 110%;
     background: olive;
-
-    /* margin-top: 2%; */
   }
 }
 
-/* FIXED IMG */
+/* FIXED IMG BETWEEN SECTIONS*/
 /* -------------------------------------------------------------------- */
 
 .fixed-image {
@@ -268,7 +298,7 @@ p {
   background-size: cover;
 }
 
-/* ROWS */
+/* PROJECTS */
 /* -------------------------------------------------------------------- */
 .two,
 #two {
@@ -277,12 +307,18 @@ p {
   padding: 5%;
 }
 
+/* SKILLS */
+/* -------------------------------------------------------------------- */
+
 .three,
 #three {
   height: 100%;
   background-color: red;
   display: flex;
 }
+
+/* CONTACT */
+/* -------------------------------------------------------------------- */
 
 .four,
 #four {
