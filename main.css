@@ -1,6 +1,6 @@
 /* Styling custom elements inside of the Bootstrap grid system */
 
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Libre+Franklin&display=swap");
 
 /* GLOBALS */
 /* -------------------------------------------------------------------- */
@@ -9,15 +9,9 @@ body {
   margin: 0 auto;
   background: #111111;
   margin-top: 56px;
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 40%;
-}
-
-p {
-  margin: 0px;
+  font-size: 15px;
+  font-family: "Libre Franklin", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
 }
 
 a,
@@ -30,6 +24,43 @@ a:visited {
 
 a:hover {
   color: red;
+}
+
+h1 {
+  font-size: 40%;
+}
+
+/* H4 For Project bg */
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  /* top: -35; */
+  z-index: 0;
+  padding: 0.5%;
+}
+
+h4:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3;
+  width: 50%;
+  height: 80%;
+  left: 0%;
+  padding: 0.5%;
+  border-top: 30px solid aqua;
+  border-bottom: 5px solid indigo;
+  z-index: -1;
+}
+
+h4 a,
+a:active,
+a:link {
+  color: red;
+}
+
+p {
+  margin: 0px;
 }
 
 /* NAVIGATION */
@@ -46,6 +77,11 @@ a:hover {
   margin-right: -2%;
 }
 
+.fa-chevron-down {
+  font-size: 350%;
+  text-align: center;
+}
+
 /* HEADER */
 /* -------------------------------------------------------------------- */
 
@@ -54,12 +90,12 @@ a:hover {
   /* background-repeat: no-repeat; */
   background-size: cover;
   height: 100%;
-  background-color: blanchedalmond;
+  background: salmon;
 }
 
 @media (min-width: 320px) and (max-width: 373px) {
   .header {
-    background: salmon;
+    /* background: salmon; */
     /* height: 100vh; */
     /* to offset navbar */
     /* margin-top: -13px; */
@@ -68,10 +104,7 @@ a:hover {
 
 @media (min-width: 373px) and (max-width: 576px) {
   .header {
-    background: orangered;
-    /* height: 100vh; */
-    /* to offset navbar */
-    /* margin-top: -13px; */
+    background: gold;
   }
 }
 
@@ -117,49 +150,64 @@ a:hover {
 
 @media (min-width: 320px) and (min-width: 330px) {
   .header h1 {
-    font-family: "Josefin Sans", sans-serif;
-    letter-spacing: -3%;
     font-size: 125%;
     text-align: center;
   }
 }
 
-@media (min-width: 330px) and (min-width: 576px) {
+@media (min-width: 330px) and (max-width: 373px) {
   .header h1 {
-    font-family: "Josefin Sans", sans-serif;
-    letter-spacing: -3%;
-    font-size: 100%;
-    text-align: center;
-    margin-top: 10%;
-    background: red;
+    font-size: 120%;
+    margin-top: 5%;
   }
 }
+
+@media (min-width: 373px) and (max-width: 576px) {
+  .header h1 {
+    font-size: 120%;
+    margin-top: 5%;
+  }
+}
+
+/* @media (min-width: 373px) and (max-width: 576px) {
+  .header h1 {
+    font-size: 100%;
+    margin-top: 10%;
+  }
+} */
 
 .katie-img {
   width: 70%;
   margin-top: -28%;
 }
 
-@media (min-width: 320px) and (max-width: 330px) {
+@media (min-width: 320px) and (max-width: 373px) {
   .katie-img {
-    width: 70%;
+    width: 68%;
     margin-top: -28%;
   }
 }
 
-@media (min-width: 350px) and (max-width: 450px) {
+@media (min-width: 373px) and (max-width: 380px) {
   .katie-img {
-    width: 70%;
+    width: 68%;
     margin-top: -28%;
   }
 }
 
-@media (min-width: 330px) and (max-width: 450px) {
+@media (min-width: 380px) and (max-width: 450px) {
+  .katie-img {
+    width: 68%;
+    margin-top: -28%;
+  }
+}
+
+/* @media (min-width: 330px) and (max-width: 450px) {
   .katie-img {
     width: 70%;
     margin-top: -28%;
   }
-}
+} */
 
 @media (min-width: 450px) and (max-width: 576px) {
   .katie-img {
@@ -178,8 +226,7 @@ a:hover {
 /* -------------------------------------------------------------------- */
 
 .subtitle p {
-  font-family: "Courier New", Courier, monospace;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 100%;
   text-align: center;
   margin-top: -25%;
@@ -226,7 +273,8 @@ a:hover {
 .two,
 #two {
   height: 100%;
-  background-color: green;
+  background-color: floralwhite;
+  padding: 5%;
 }
 
 .three,
