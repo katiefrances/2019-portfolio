@@ -81,7 +81,7 @@ p {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .header {
-    background: saddlebrown;
+    background: goldenrod;
     height: 100vh;
   }
 }
@@ -97,21 +97,21 @@ p {
 
 @media (min-width: 320px) and (max-width: 400px) {
   .header-inner {
-    font-size: 900%;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 576px) {
-  .header-inner {
-    font-size: 900%;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 576px) {
-  .header-inner {
     font-size: 930%;
   }
 }
+
+@media (min-width: 400px) and (max-width: 576px) {
+  .header-inner {
+    font-size: 900%;
+  }
+}
+
+/* @media (min-width: 400px) and (max-width: 576px) {
+  .header-inner {
+    font-size: 930%;
+  }
+} */
 
 @media (min-width: 576px) and (max-width: 768px) {
   .header-inner {
@@ -129,7 +129,7 @@ p {
   letter-spacing: -3%;
   font-size: 120%;
   text-align: center;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   /* border-bottom: 10px solid #111111; */
 }
 
@@ -142,7 +142,7 @@ p {
 
 @media (min-width: 330px) and (max-width: 373px) {
   .header h1 {
-    font-size: 120%;
+    /* font-size: 120%; */
     margin-top: 5%;
     margin-bottom: 10%;
   }
@@ -150,7 +150,7 @@ p {
 
 @media (min-width: 373px) and (max-width: 400px) {
   .header h1 {
-    font-size: 115%;
+    /* font-size: 150%; */
     margin-top: 5%;
     margin-bottom: 10%;
   }
@@ -161,7 +161,6 @@ p {
     font-size: 110%;
     margin-top: 5%;
     margin-bottom: 10%;
-    /* background: orange; */
   }
 }
 
@@ -175,9 +174,15 @@ p {
 
 @media (min-width: 410px) and (max-width: 430px) {
   .header h1 {
-    font-size: 118%;
+    font-size: 110%;
     margin-top: 5%;
-    /* margin-bottom: 10%; */
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 430px) {
+  .header h1 {
+    font-size: 150%;
   }
 }
 
@@ -205,7 +210,7 @@ p {
 
 @media (min-width: 380px) and (max-width: 400px) {
   .katie-img {
-    width: 64.5%;
+    /* width: 58%; */
     margin-top: -28%;
   }
 }
@@ -224,12 +229,19 @@ p {
   }
 }
 
-/* @media (min-width: 430px) and (max-width: 576px) {
+@media (min-width: 450px) and (max-width: 576px) {
   .katie-img {
-    width: 70%;
-    margin-top: -5%;
+    width: 55%;
+    margin-top: -20%;
   }
-} */
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .katie-img {
+    width: 50%;
+    margin-top: 0%;
+  }
+}
 
 /* @media (min-width: 576px) and (max-width: 768px) {
   .katie-img {
@@ -250,6 +262,7 @@ p {
   background: #fff;
 }
 
+/* XS - specifically targeting iPhone 5 and lower */
 @media (min-width: 320px) and (max-width: 450px) {
   .subtitle p {
     background: #fff;
@@ -313,7 +326,7 @@ h4:after {
   width: 60%;
   height: 110%;
   left: -2%;
-  padding: 2%;
+  /* padding: 2%; */
   background: salmon;
   box-shadow: 10px 10px;
 
