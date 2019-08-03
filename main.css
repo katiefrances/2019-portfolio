@@ -210,14 +210,14 @@ p {
 
 @media (min-width: 380px) and (max-width: 400px) {
   .katie-img {
-    /* width: 58%; */
+    width: 65%;
     margin-top: -28%;
   }
 }
 
 @media (min-width: 400px) and (max-width: 430px) {
   .katie-img {
-    width: 65%;
+    /* width: 65%; */
     margin-top: -28%;
   }
 }
