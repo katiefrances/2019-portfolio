@@ -158,15 +158,7 @@ p {
 
 @media (min-width: 400px) and (max-width: 410px) {
   .header h1 {
-    font-size: 110%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-  }
-}
-
-@media (min-width: 410px) and (max-width: 500px) {
-  .header h1 {
-    font-size: 118%;
+    font-size: 135%;
     margin-top: 5%;
     margin-bottom: 10%;
   }
@@ -180,9 +172,9 @@ p {
   }
 }
 
-@media (min-width: 430px) {
+@media (min-width: 430px) AND (max-width: 576px) {
   .header h1 {
-    font-size: 150%;
+    font-size: 140%;
   }
 }
 
@@ -217,7 +209,7 @@ p {
 
 @media (min-width: 400px) and (max-width: 430px) {
   .katie-img {
-    /* width: 65%; */
+    width: 65%;
     margin-top: -28%;
   }
 }
